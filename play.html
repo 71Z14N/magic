@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Infinity Blade x Myst</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="exploration">
+  <img id="sceneImage" draggable="false">
+  <video id="explorationVideo" playsinline></video>
+  <div id="collectablesLayer"></div>
+  <div id="hint">click to continue</div>
+  <div id="inventory">
+    <div id="inventoryTitle">Inventory</div>
+    <div id="inventoryItems"></div>
+  </div>
+</div>
+
+<div id="game" style="display: none;">
+
+  <img id="gameSceneImage" draggable="false">
+  <div id="enemyLayer"></div>
+  <video id="gameVideo" playsinline></video>
+
+  <div id="ui">
+    <div class="bar">
+      <div id="playerHP" class="hp player"></div>
+    </div>
+    <div class="bar">
+      <div id="enemyHP" class="hp enemy"></div>
+    </div>
+
+    <div id="qte">PRESS A</div>
+  </div>
+
+  <div id="deathScreen">
+    <div id="deathOverlay"></div>
+    <div id="deathText">
+      <h1>YOU DIED</h1>
+      <button id="tryAgainBtn">Try Again</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
